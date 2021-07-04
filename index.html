@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio Website</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+    <!--<div style="height: 5vh;"></div>-->
     <h1>Hi there! Welcome</h1>
+    <p>I am exploring and I want to make a library which would make all my projects look good and consistent</p>
+    <hr>
     <h1>Hope you are doing well, the biggest heading</h1>
     <h2>@typoghrapy the second biggest heading</h2>
     <p>This is a simple paragraph describing about the website</p>
@@ -16,27 +20,95 @@
     
     <h2>@Container</h2>
     <h3>Fluid Container</h3>
-    <div>This is fluid container</div>
+    <div class="container">This is fluid container</div>
     <h3>Centered Container</h3>
-    <div>This is a centered container</div>
+    <div class="container container-centered">This is a centered container</div>
     <hr>
 
     <h2>@links</h2>
-    <a href="">This is primary Link</a>
-    <a href="">This is an secondary</a>
+    <a class="link link-primary" href="">Primary Link</a>
+    <a class="link link-secondary" href="">Secondary Link</a>
     <hr>
 
     <h2>@lists</h2>
     <h3>unordered lists</h3>
     <p>We don't need bullets in the list</p>
-    <ul>
+    <ul class="list-non-bullet">
         <li>item one</li>
         <li>item two</li>
         <li>item three</li>
     </ul>
 
     <h3>inline lists</h3>
+    <ul>
+        <li class="list-item-inline">inline item one</li>
+        <li class="list-item-inline">inline item two</li>
+        <li class="list-item-inline">inline item three</li>
+    </ul>
 
+    <h3>reverse ordered list</h3>
+    <ol reversed>
+        <li>milk</li>
+        <li>bread</li>
+        <li>butter</li>
+    </ol>
+    <hr>
+
+    <h2>@nav</h2>
+    <nav class="navigation container">
+    <div class="nav-brand">iAmABrand</div>
+        <ul class="list-non-bullet nav-pills">
+         <li class="list-item-inline">
+             <a class="link link-active" href="/">home</a></li>
+         <li class="list-item-inline">
+             <a class="link" href="/">products</a></li>
+         <li class="list-item-inline">
+             <a class="link" href="/">about</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <h2>@header</h2>
+    <header class="hero">
+        <img class="hero-image" src="images/img1.svg"/>
+        <h1 class="hero-heading">rohit rout <span class="heading-inverted">the developer</span></h1>
+    </header>
+    <hr>
+
+    <h2>@section</h2>
+    <section class="section">
+        <h1>white section</h1>
+        <div class="container container-centered"><p>We are an open community of developers building resources for a better Web, regardless of brand, browser, or platform. Anyone can contribute and each person who does makes us stronger. Together we can continue to drive innovation on the Web to serve the greater good. It starts here, with you.</p></div>
+    </section>
+    <section class="section ow">
+        <h1>off white section</h1>
+        <div class="container container-centered"><p>We are an open community of developers building resources for a better Web, regardless of brand, browser, or platform. Anyone can contribute and each person who does makes us stronger. Together we can continue to drive innovation on the Web to serve the greater good. It starts here, with you.</p></div>
+    </section>
+    <hr>
+
+    <h2>@footer</h2>
+    <footer class="footer">
+        <div class="footer-header">heading inside the footer</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href>
+                    socialone
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href>
+                    socialTwo
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href>
+                    socialThree
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <div style="height: 30vh;"></div>
 
 </body>
 </html>
