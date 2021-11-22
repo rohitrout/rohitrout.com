@@ -8,7 +8,11 @@ var emojiDictionary = {
   "😆": "Grinning Squinting Face",
   "😅": "Grinning Face with Sweat",
   "🤣": "Rolling on the Floor Laughing",
-  "😂": "Face with Tears of Joy"
+  "😂": "Face with Tears of Joy",
+  "😘": "Face Blowing a Kiss",
+  "😗" :"Kissing Face",
+  "😛": "Face with Tongue",
+  "😚" :"Kissing Face with Closed Eyes"
 };
 
 var emojiWeKnow = Object.keys(emojiDictionary);
